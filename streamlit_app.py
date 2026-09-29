@@ -701,7 +701,7 @@ def main():
     phi = sb.slider("LO phase error φ (°)", -180, 180, 0, 5, disabled=not coherent)
     df = sb.slider("LO frequency error Δf (Hz)", -300, 300, 0, 5, disabled=not coherent)
     if coherent:
-        cut_k = sb.slider("LPF cutoff (× message BW)", 1.1, 5.0, 1.5, 0.1)
+        cut_k = sb.slider("LPF cutoff (× message BW)", 0.1, 5.0, 1.5, 0.1)
         cut_cap = 0.7 * fc
     else:
         cut_k = sb.slider("Detector RC cutoff (× message BW)", 1.1, 10.0, 6.0, 0.5,
