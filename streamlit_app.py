@@ -716,7 +716,7 @@ def main():
 
     sb.subheader("Display")
     periods = sb.slider("Message periods shown", 1, 8, 3)
-    yscale = sb.radio("Spectrum scale", ["dB", "Linear"], horizontal=True)
+    yscale = sb.radio("Spectrum scale", ["Linear", "dB"], horizontal=True)
     win = sb.selectbox("FFT window", list(WINDOWS), index=0,
                        help="Hann: sharp lines, low leakage. Blackman-Harris: deepest floor. "
                             "Rectangular: ideal lines for exactly periodic signals.")
